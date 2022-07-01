@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.image-container {
+    border: 2px solid blue;
+    background-image: "images/small-background.jpg";
+}
+
+.sign-up-form-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.intro {
+    border: 2px solid darkcyan;
+    padding: 10px;
+}
+
+.sign-up-form {
+    padding: 10px;
+}
