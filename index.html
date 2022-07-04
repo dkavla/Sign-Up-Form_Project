@@ -8,35 +8,65 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="main-container">
-        <div class="image-container">
-            <!-- <img class="left-background" src="images/small-background.jpg" alt=""> -->
-            <img class="logo" src="images/odin-logo.png" alt="odin-project-logo">
+    <div class="page-container">
+        <div class="left-column">
+            <div class="logo-div">
+                <img class="odin-logo" src="images/odin-logo.png" alt="">
+                <h3 class="logo-header">ODIN</h3>
+            </div>
         </div>
-        <div class="sign-up-form-container">
-            <form action="#">
-                <div class="intro">
-                    <p>
-                        This is not a real online service! You know you need 
-                        something like this in your life to help you realize 
-                        your deepest dreams. Sign up <em>now</em> to get started.
-                    </p>
-                    <br>
-                    <p>You <em>know</em> you want to.</p>
-                </div>
-                <div class="sign-up-form">
-                    <h2>Let's do this!</h2>
-                    <form action="">
-
+        <div class="right-column">
+            <div class="info-div">
+                <p class="first-par">
+                    This is not a real online service! You know you need
+                    something like this in your life to help you realize your
+                    deepest dreams. Sign up <em>now</em> to get started.
+                </p>
+                <br>
+                <p class="second-par">You <em>know</em> you want to.</p>
+            </div>
+            <div class="sign-up-div">
+                <h2>Let's do this!</h2>
+                    <form class="required-form" action="#">
+                        <div class="first-col">
+                            <ul>
+                                <li>
+                                    <label for="first_name">FIRST NAME</label>
+                                    <input type="text" name="first_name" id="first_name">
+                                </li>
+                                <li>
+                                    <label for="email">EMAIL</label>
+                                    <input type="email" name="email" id="email">
+                                </li>
+                                <li>
+                                    <label for="user_password">PASSWORD</label>
+                                    <input type="password" name="user_password" id="user_password" required>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="second-col">
+                            <ul>
+                                <li>
+                                    <label for="last_name">LAST NAME</label>
+                                    <input type="text" name="last_name" id="last_name">
+                                </li>
+                                <li>
+                                    <label for="phone_number">PHONE NUMBER</label>
+                                    <input type="tel" name="phone_number" id="phone_number">
+                                </li>
+                                <li>
+                                    <label for="confirm_password">CONFIRM PASSWORD</label>
+                                    <input type="password" name="confirm_password" id="confirm_password">
+                                </li>
+                            </ul>
+                        </div>
                     </form>
-                </div>
-                <div class="create-account-container">
-                    <button type="submit">Create Account</button>
-                    <br>
-                    <p>Already have an account? <a class="log-in" href="#">Log in</a></p>
-                </div>
-            </form>
+            </div>
+            <div class="create-div">
+                Create Account
+            </div>
         </div>
     </div>
+    
 </body>
 </html>
