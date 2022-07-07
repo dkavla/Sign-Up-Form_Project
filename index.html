@@ -40,7 +40,7 @@
                                 </li>
                                 <li>
                                     <label for="user_password">PASSWORD</label>
-                                    <input type="password" name="user_password" id="user_password" required>
+                                    <input class="error" type="password" name="user_password" id="user_password" required>
                                 </li>
                             </ul>
                         </div>
@@ -56,14 +56,15 @@
                                 </li>
                                 <li>
                                     <label for="confirm_password">CONFIRM PASSWORD</label>
-                                    <input type="password" name="confirm_password" id="confirm_password">
+                                    <input class="error" type="password" name="confirm_password" id="confirm_password" required>
                                 </li>
                             </ul>
                         </div>
                     </form>
             </div>
             <div class="create-div">
-                Create Account
+                <button class="create-account" type="submit">Create Account</button>
+                <p class="existing-account">Already have an account? <a href="#">Log in</a></p>
             </div>
         </div>
     </div>
