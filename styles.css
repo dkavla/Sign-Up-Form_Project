@@ -1,4 +1,6 @@
-* {
+*,
+::after,
+::before {
     margin: 0;
     padding: 0;
 }
@@ -107,15 +109,27 @@ input[type="text"]:focus {
     border: 1px solid blue;
 }
 
-input:required:focus {
+input[type="password"]:required {
     border: 1px solid red;
 }
+
+input[type="password"]:valid {
+    border: 2px solid green;
+}
+
+#phone_number:invalid {
+    border: 2px solid red;
+}
+
+/* #phone_number:valid {
+    border: 2px solid green;
+} */
+
 
 label {
     font-weight: 20px;
     font-family: 'Roboto Slab', sans-serif;
 }
-
 
 /* Create Account section styles */
 .create-account {
@@ -128,6 +142,11 @@ label {
     margin: 20px 0 20px 50px;
     padding: 10px 40px 10px 40px;
     font-weight: bold;
+}
+
+.create-account:hover {
+    cursor: pointer;
+    background-color: #3f562b;
 }
 
 .existing-account {
